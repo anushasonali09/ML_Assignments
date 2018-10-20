@@ -27,7 +27,7 @@ print_words() and print_top().
 """
 def helper(fname):
     text=open(fname,'r')
-    a=text.read()
+    a=text.read().lower()
     for i in range(len(a)):
         if(a[i].isalnum()==False):
             if(a[i]!=' ' and a[i]!='\n'):
